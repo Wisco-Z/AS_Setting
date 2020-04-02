@@ -1,0 +1,12 @@
+文件夹：删除除app文件夹外的所有文件夹，并在app文件夹改build.gradle的文件包名称,如：
+    defaultConfig 中 applicationId "com.android.myapplication"//文件包名称修改成自己的包名
+
+gradle文件夹（内容包含gradle版本）直接用新项目的gradle文件夹替换
+
+文件：修改local.properties（具体是sdk指定文件夹） 修改内容如下：
+	sdk.dir=D\:\\android_software\\Android_Sdk
+
+         修改build.gradle-改成AS版本 3.6.2（具体版本号为自己的AndroidStudio版本）
+
+**********************************
+总之 只剩下app文件夹，复制新项目（模板）三个文件（local.properties  build.gradle gradle.properties--这个一般可不改）+一个文件夹（gradle） + 修改app文件夹（包含src等文件）的 build.gradle文件
